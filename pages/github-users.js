@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 import { checkServer } from '../shared/utils'
 import CounterDisplay from '../shared/components/counter-display'
 import Header from '../shared/components/header'
+import styles from "./styles.styl"
+
 
 class Github extends Component {
   static async getInitialProps (ctx) {
@@ -24,6 +26,7 @@ class Github extends Component {
       <div>
         <Header />
         <h1> Github users </h1>
+        <div className={styles.stark}>Hi stark</div>
         <p>
           Server rendered github user list. You can also reload the users from
           the api by clicking the <b>Get users</b> button below.
